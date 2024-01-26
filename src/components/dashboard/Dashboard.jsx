@@ -10,6 +10,11 @@ class Dashboard extends Component {
     return (
       <React.Fragment>
         <div className="dashboard container">
+          <blockquote>
+            Busque pelos alimentos presentes na tabela TACO. <br />O app
+            mostrará no máximo 10 alimentos por vez.
+          </blockquote>
+          <Filtro />
           <div className="row">
             <div className="col s12 m6">
               {isLoaded ? (
@@ -19,11 +24,7 @@ class Dashboard extends Component {
               )}
             </div>
             <div className="col s12 m5 offet-m1">
-              <blockquote>
-                Busque pelos alimentos presentes na tabela TACO. <br />O app
-                mostrará no máximo 10 alimentos por vez.
-              </blockquote>
-              <Filtro />
+             
             </div>
           </div>
         </div>
